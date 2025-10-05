@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     // Fetch token from backend
-    fetch("https://twilio-app-backend.onrender.com")
+    fetch("https://twilio-app-backend.onrender.com/token")
       .then((res) => res.json())
       .then((data) => {
         console.log("Received Token:", data.token);
